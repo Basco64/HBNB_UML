@@ -7,12 +7,12 @@ class PresentationLayer {
     interface FacadeServiceAPI
 }
 class BusinessLogicLayer {
-     package "ModelClasses" {
+     <<ModelClasses>> 
         class User
         class Place
         class Review
         class Amenity
-    }
+    
 }
 class PersistenceLayer {
      class DatabaseAccess
