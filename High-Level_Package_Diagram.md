@@ -15,6 +15,7 @@ class BusinessLogicLayer {
 }
 class PersistenceLayer {
     -DatabaseStorage
+    -CRUD()
 }
 
 PresentationLayer --> BusinessLogicLayer : Facade Pattern
