@@ -3,7 +3,7 @@ classDiagram
 
 class PresentationLayer {
     <<Interface>>
-    +servieAPI()
+    +serviceAPI()
     +HandleUserRequest()
 }
 class BusinessLogicLayer {
