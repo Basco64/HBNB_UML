@@ -1,3 +1,5 @@
+``` mermaidjs
+
 classDiagram
 
 class PresentationLayer {
@@ -21,3 +23,4 @@ UI --> FacadeServiceAPI : Sends Data
 PresentationLayer ..> BusinessLogicLayer : Facade Pattern
 
 BusinessLogicLayer ..> PersistenceLayer : Database Operations
+```
