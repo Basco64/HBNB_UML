@@ -7,17 +7,16 @@ class PresentationLayer {
     +HandleUserRequest()
 }
 class BusinessLogicLayer {
-    +User
-    +Place
-    +Review
-    +Amenity
-    +Process()
+    -User
+    -Place
+    -Review
+    -Amenity
+    -Process()
 }
 class PersistenceLayer {
-    +DatabaseAccess
-    +CRUD()
+    -DatabaseStorage
 }
 
 PresentationLayer --> BusinessLogicLayer : Facade Pattern
-BusinessLogicLayer --> PersistenceLayer : Direct Access
+BusinessLogicLayer --> PersistenceLayer : DataBase Operations
 ```
