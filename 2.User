@@ -1,6 +1,6 @@
 ```mermaid
-
 sequenceDiagram
+
     participant User
     participant API
     participant BusinessLogic
