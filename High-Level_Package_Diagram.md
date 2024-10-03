@@ -1,3 +1,4 @@
+# UML example
 
 ```plantuml
 @startuml
