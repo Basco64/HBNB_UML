@@ -1,0 +1,16 @@
+```mermaid
+sequenceDiagram
+    participant User
+    participant API
+    participant BusinessLogic
+    participant Database
+
+    User->>API: Submit registration details
+    API->>BusinessLogic: Validate user data
+    BusinessLogic->>Database: Check if email exists
+    Database-->>BusinessLogic: Email does not exist
+    BusinessLogic->>Database: Save new user
+    Database-->>BusinessLogic: User saved
+    BusinessLogic-->>API: Registration success
+    API-->>User: Return success response
+```
